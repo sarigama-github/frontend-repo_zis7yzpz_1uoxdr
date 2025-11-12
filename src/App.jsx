@@ -1,28 +1,11 @@
-import { useState } from 'react'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function AppPlaceholder(){
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
+    <div className="min-h-screen grid place-items-center text-center p-8">
+      <div>
+        <h1 className="text-3xl font-bold">Migrated to TypeScript</h1>
+        <p className="text-gray-500 mt-2">Open src/App.tsx for the new UI.</p>
+        <a className="mt-6 inline-block text-blue-600" href="/">Reload</a>
       </div>
     </div>
   )
 }
-
-export default App
